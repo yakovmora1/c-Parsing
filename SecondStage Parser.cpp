@@ -14,13 +14,13 @@ double returnSum(string sec1, string sec2, char operat)
 	switch (operat)
 	{
 	case '+':
-		return( num1 + num2);
+		return( (double) num1 + num2);
 		break;
 	case '-':
-		return(num1 - num2);
+		return((double)num1 - num2);
 		break;
 	case '*':
-		return(num1*num2);
+		return((double)num1*num2);
 		break;
 	case '/':
 		double ans = (double)num1 / num2;
@@ -67,6 +67,7 @@ int main(int argc, char *argv[]) {
 				ssum << sum;
 				chars.insert(chars.begin() +(i-1) , ssum.str());
 				ssum.str("");//clear the streamstring
+				i=i-1;
 			}
             
         
